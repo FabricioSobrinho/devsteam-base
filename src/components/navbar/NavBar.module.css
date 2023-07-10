@@ -1,0 +1,27 @@
+.navBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 17.5vh;
+  background-color: #171a21;
+  padding: 0 5%;
+}
+.navBar input[type="text"] {
+  height: 6.5vh;
+  width: 21%;
+  border: none;
+  outline: none;
+  font-size: 1.1em;
+  padding: 1%;
+  background: none;
+  border-bottom:solid 2px #28272c;
+  transition: .3s ease;
+  color: #f0f0f0;
+}
+.navBar input[type=text]::placeholder {
+    padding: 5%;
+    font-size: 1em;
+    font-weight: 200;
+    color: #5b5b5b;
+    font-family: FontAwesome, sans-serif;
+}
