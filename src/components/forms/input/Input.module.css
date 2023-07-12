@@ -1,0 +1,22 @@
+.inputContainer {
+    width: 20vw;
+}
+.inputContainer input[type="text"] {
+  height: 6.5vh;
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 1.1em;
+  padding: 1%;
+  background: none;
+  border-bottom: solid 2px #28272c;
+  transition: 0.2s ease;
+  color: #f0f0f0;
+}
+.inputContainer input[type="text"]::placeholder {
+  padding: 5%;
+  font-size: 1em;
+  font-weight: 200;
+  color: #5b5b5b;
+  font-family: FontAwesome, sans-serif;
+}

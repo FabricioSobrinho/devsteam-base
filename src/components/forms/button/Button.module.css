@@ -1,0 +1,21 @@
+.button {
+  padding: 1.5rem 0.5rem;
+  border-radius: 1rem;
+  background: #549300;
+  border: none;
+  outline: none;
+  font-weight: 700;
+  color: #f0f8ff;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.button:hover {
+  background: #4a7d08;
+}
+
+.fullWidth {
+  width: 100%;
+}

@@ -1,0 +1,29 @@
+.session {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 3rem 1rem;
+    /* text-align: center; */
+}
+
+.saleContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+    gap: 2rem;
+}
+.gameContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+}
+
+@media (max-width: 850px ) {
+    .saleContainer {
+        justify-content: center;
+    }
+}

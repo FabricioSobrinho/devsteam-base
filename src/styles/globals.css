@@ -15,4 +15,10 @@ html {
 }
 body {
   font-size: 1.6rem;
+  overflow-x: hidden;
+}
+@media (max-width: 600px) {
+  body {
+    font-size: .9rem;
+  }
 }
