@@ -1,7 +1,7 @@
 import Button from '@/components/forms/button/Button'
 import styles from './GameCard.module.css'
 import Image from 'next/image'
-function GameCard() {
+function GameCard({onAdd}) {
   return (
     <div className={styles.gameCard}>
         <Image className={styles.img} src='/products/counter-strike.jpg'width={300} height={145}/>
@@ -10,7 +10,7 @@ function GameCard() {
            <p className={styles.categories}>Ação, estratégia, multiplayer</p>
             <div className={styles.pricing}>
                 <h2 className={styles.price}>99,99</h2>
-                <Button>Adicionar ao carrinho</Button>
+                <Button onClick={onAdd}>Adicionar ao carrinho</Button>
             </div> {/*Game Price*/}
          </div> {/*Card title*/}
     </div>

@@ -1,0 +1,27 @@
+.option {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: right;
+}
+.info {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    justify-content: center;
+}
+.title, .price {
+    font-size: 1.6rem;
+}
+.price {
+    color: #beeb14;
+}
+.remove {
+   color: #f00;
+   font-size: 1.2rem;
+   font-style: italic;
+   cursor: pointer; 
+}
+.image {
+    object-fit: contain;
+}

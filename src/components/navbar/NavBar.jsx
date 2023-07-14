@@ -1,21 +1,17 @@
-import styles from './NavBar.module.css'
-import Logo from '../logo/Logo'
-import {BsCart4} from 'react-icons/bs'
-import Input from '../forms/input/Input'
+import styles from "./NavBar.module.css"
+import Logo from "../logo/Logo"
 
-function NavBar() {
-    
+import Input from "../forms/input/Input"
+import CartButton from "../forms/button/cart button/CartButton"
+
+function NavBar({ onRemove, cart }) {
   return (
     <nav className={styles.navBar}>
-    <Logo /> 
-    <Input />
-    <div className={styles.cartShow}>
-     <BsCart4 size={40}/> 
-    </div>
-    
-        
-        
-        
+      <Logo />
+      <Input />
+      <div className={styles.cartShow}>
+        <CartButton cart={cart} onRemove={onRemove} />
+      </div>
     </nav>
   )
 }
