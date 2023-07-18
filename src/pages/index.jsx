@@ -7,19 +7,19 @@ import SaleCard from "@/components/cards/sale card/SaleCard"
 import styles from "@/styles/Index.module.css"
 import GameCard from "@/components/cards/game card/GameCard"
 
-import { useState } from "react"
+import { useRecoilState } from "recoil"
+
+import { cartState } from "@/atoms/cart"
 
 export default function Home() {
-  const [cart, setCart] = useState([])
+  const [cart, setCart] = useRecoilState(cartState)
 
   const handleProduct = (info) => {
     setCart([...cart, info])
   }
-  const removeProduct = (pos) => {
-    setCart(cart.filter((obj, posObj) => posObj !== pos))
-  }
+  
   return (
-    <>
+    <>    
       <Head>
         <title>DevSteam: A sua loja online de games</title>
         <meta
@@ -30,7 +30,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div>
-        <NavBar cart={cart} onRemove={removeProduct} />
+        <NavBar />
         <Container>
           <div className={styles.session}>
             <Subtitle>Promoções exclusivas: </Subtitle>
